@@ -1,0 +1,24 @@
+{
+  "source": "src",
+  "destination": "build",
+  "plugins": {
+    "metalsmith-drafts": true,
+    "metalsmith-metallic": true,
+    "metalsmith-markdown": {
+      "gfm": true,
+      "tables": true,
+      "breaks": true
+    },
+    "metalsmith-beautify": {
+      "indent_size": 2,
+      "indent_char": " ",
+      "html": true,
+      "css": false,
+      "js": false
+    },
+    "metalsmith-templates": {
+      "engine": "handlebars",
+      "directory": "templates"
+    }
+  }
+}
